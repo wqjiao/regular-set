@@ -1,0 +1,120 @@
+{
+	"name": "regular-set",
+	"displayName": "regular-set",
+	"description": "公共正则表达式集合",
+	"version": "0.0.1",
+	"publisher": "jwq",
+	"icon": "assets/logo.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.rule0",
+				"title": "wqjiao: 手机号码(严谨)"
+			},
+			{
+				"command": "extension.rule1",
+				"title": "wqjiao: 手机号码(宽松)"
+			},
+			{
+				"command": "extension.rule2",
+				"title": "wqjiao: 国内座机电话"
+			},
+			{
+				"command": "extension.rule3",
+				"title": "wqjiao: 座机电话(包括港澳台)"
+			},
+			{
+				"command": "extension.rule4",
+				"title": "wqjiao: 电子邮箱"
+			},
+			{
+				"command": "extension.rule5",
+				"title": "wqjiao: 身份证号"
+			},
+			{
+				"command": "extension.rule6",
+				"title": "wqjiao: 护照(包含香港、澳门)"
+			},
+			{
+				"command": "extension.rule7",
+				"title": "wqjiao: 车牌号(新能源+非新能源)"
+			},
+			{
+				"command": "extension.rule8",
+				"title": "wqjiao: 新能源车牌号"
+			},
+			{
+				"command": "extension.rule9",
+				"title": "wqjiao: 非新能源车牌号"
+			},
+			{
+				"command": "extension.rule10",
+				"title": "wqjiao: 车架号"
+			},
+			{
+				"command": "extension.rule11",
+				"title": "wqjiao: 发动机号"
+			},
+			{
+				"command": "extension.rule12",
+				"title": "wqjiao: 中国邮政编码"
+			},
+			{
+				"command": "extension.rule13",
+				"title": "wqjiao: 允许字母数字下划线组合"
+			},
+			{
+				"command": "extension.rule14",
+				"title": "wqjiao: 汉字"
+			},
+			{
+				"command": "extension.rule15",
+				"title": "wqjiao: 英文"
+			},
+			{
+				"command": "extension.rule16",
+				"title": "wqjiao: 数字"
+			},
+			{
+				"command": "extension.rule17",
+				"title": "wqjiao: 小数"
+			},
+			{
+				"command": "extension.rule18",
+				"title": "wqjiao: 不能包含汉字"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.2"
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/wqjiao/regular-set"
+    }
+}
