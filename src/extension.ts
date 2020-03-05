@@ -10,6 +10,7 @@ function activate(context: vscode.ExtensionContext) {
 
 	// 多条规则组合，遍历生成多条规则
 	REGULARS.forEach(({ title, rule }: { title: string, rule: RegExp, example: string }, index: string) => {
+		// 注册命令：将命令ID绑定到扩展中的处理程序函数
 		let disposable = vscode.commands.registerCommand(`extension.rule${index}`, () => {
 			const editor = vscode.window.activeTextEditor;
 
